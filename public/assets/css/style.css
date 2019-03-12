@@ -55,12 +55,6 @@ header button {
   font-family: "Shadows Into Light", cursive;
 }
 
-#all-articles:hover,
-#saved-articles:hover,
-#refresh-articles:hover {
-  background-color: white;
-}
-
 #search-input {
   float: right;
   padding: 5px;
@@ -120,10 +114,6 @@ header button {
   color: #fff;
   font-family: 'Shadows Into Light', cursive;
   font-size: 22px;
-}
-
-.story-body button:hover {
-  background-color: #aed4fb;
 }
 
 .story-body summary {

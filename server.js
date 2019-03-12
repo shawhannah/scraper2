@@ -109,7 +109,7 @@ app.get("/scrape", function(req, res) {
         }
       });
     });
-    console.log("Scrape finished.");
+    console.log("scrape finished");
     res.redirect("/");
   });
 });
@@ -121,8 +121,7 @@ app.get("/saved", function(req, res) {
   ) {
     if (data.length === 0) {
       res.render("placeholder", {
-        message:
-          'You have not saved any articles yet. Try to save some delicious news by simply clicking "Save Article"!'
+        message: "no saved articles"
       });
     } else {
       res.render("saved", { saved: data });
@@ -146,7 +145,7 @@ app.post("/search", function(req, res) {
       console.log(data);
       if (data.length === 0) {
         res.render("placeholder", {
-          message: "Nothing has been found. Please try other keywords."
+          message: "no results"
         });
       } else {
         res.render("search", { search: data });
@@ -160,7 +159,7 @@ app.post("/save/:id", function(req, res) {
     if (data.issaved) {
       Article.findByIdAndUpdate(
         req.params.id,
-        { $set: { issaved: false, status: "Save Article" } },
+        { $set: { issaved: false, status: "save article" } },
         { new: true },
         function(err, data) {
           res.redirect("/");
@@ -169,7 +168,7 @@ app.post("/save/:id", function(req, res) {
     } else {
       Article.findByIdAndUpdate(
         req.params.id,
-        { $set: { issaved: true, status: "Saved" } },
+        { $set: { issaved: true, status: "saved" } },
         { new: true },
         function(err, data) {
           res.redirect("/saved");
