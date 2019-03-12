@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #eee;
+  background-color: rgb(139, 183, 235);
 }
 
 button {
@@ -13,7 +13,7 @@ button {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: black;
 }
 
 header form {
@@ -27,37 +27,38 @@ header {
   display: block;
   width: 100%;
   height: 70px;
-  box-shadow: 0 0 10px #aaa;
-  background-color: black;
-  opacity: 0.9;
+  background-color: white;
 }
 
 header button {
   float: left;
   font-size: 20px;
-  color: #fff;
+  color: white;
   height: 100%;
   min-width: 150px;
   padding: 0 15px;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 #all-articles {
-  background-color: #999;
+  background-color: rgb(10, 37, 87);
+  font-family: "Shadows Into Light", cursive;
 }
 
 #saved-articles {
-  background-color: #aaa;
+  background-color: rgb(10, 62, 173);
+  font-family: "Shadows Into Light", cursive;
 }
 
 #refresh-articles {
-  background-color: #bbb;
+  background-color: rgb(10, 97, 192);
+  font-family: "Shadows Into Light", cursive;
 }
 
 #all-articles:hover,
 #saved-articles:hover,
 #refresh-articles:hover {
-  background-color: #ccc;
-  opacity: 0.9;
+  background-color: white;
 }
 
 #search-input {
@@ -67,6 +68,7 @@ header button {
   min-width: 200px;
   border-radius: 5px;
   margin-top: 10px;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 #search-submit {
@@ -81,11 +83,10 @@ header button {
   float: left;
   padding: 15px 11px;
   height: 100%;
-  background-color: #92afcc;
+  background-color: #5982b8;
   font-size: 23px;
-  font-weight: bold;
-  color: #fff;
-  opacity: 0.7;
+  font-family: "Shadows Into Light", cursive;
+  color: white;
 }
 
 #cover {
@@ -96,7 +97,6 @@ header button {
   margin: auto;
   width: 95%;
   min-height: 200px;
-  box-shadow: 0 0 10px #aaa;
   background-color: #fff;
 }
 
@@ -110,6 +110,7 @@ header button {
   width: 77%;
   color: #fff;
   padding-left: 10px;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 .story-body button {
@@ -117,13 +118,12 @@ header button {
   min-width: 128px;
   background-color: #77b9fd;
   color: #fff;
-  font-weight: bold;
+  font-family: 'Shadows Into Light', cursive;
   font-size: 22px;
 }
 
 .story-body button:hover {
   background-color: #aed4fb;
-  box-shadow: 0 0 10px #fff;
 }
 
 .story-body summary {
@@ -140,12 +140,12 @@ header button {
 .message {
   width: 100%;
   border-radius: 5px;
-  box-shadow: 0 0 10px #aaa;
   margin: auto;
   text-align: center;
   padding: 40px 90px;
   color: #aaa;
   background-color: #fff;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 #addnote {
@@ -176,6 +176,7 @@ header button {
   color: #fff;
   padding: 0 20px;
   margin: 0;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 #note-displayer h3 {
@@ -183,27 +184,26 @@ header button {
   margin: 0;
   background-color: #93d2f7;
   color: #3181d3;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 #note-displayer label {
   color: #aaa;
   font-size: 20px;
-  font-weight: bold;
-}
+  font-family: 'Shadows Into Light', cursive;
 
 #note-displayer button {
   min-width: 128px;
   background-color: #77b9fd;
-  color: #fff;
-  font-weight: bold;
+  color: white;
   font-size: 20px;
   margin: 0 10px;
   border-radius: 5px;
+  font-family: "Shadows Into Light", cursive;
 }
 
 #note-displayer button:hover {
   background-color: #aed4fb;
-  box-shadow: 0 0 10px #fff;
 }
 
 #note-title {
@@ -211,12 +211,14 @@ header button {
   margin: 0 0 10px 0;
   padding: 5px;
   font-size: 15px;
+  font-family: "Shadows Into Light", cursive;
 }
 
 #note-body {
   width: 100%;
   padding: 5px;
   font-size: 15px;
+  font-family: "Shadows Into Light", cursive;
 }
 
 #container {
@@ -232,6 +234,7 @@ footer {
   text-align: center;
   background-color: black;
   color: #ddd;
+  font-family: "Shadows Into Light", cursive;
   font-size: 15px;
   border-top: 8px solid #3e9cfc;
   opacity: 0.7;

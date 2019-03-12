@@ -11,7 +11,7 @@ var request = require("request");
 
 // Mongoose
 
-var Note = require("./models/Note");
+var note = require("./models/note");
 var Article = require("./models/Article");
 var databaseUrl = "mongodb://localhost/scrap";
 
@@ -54,8 +54,7 @@ app.get("/", function(req, res) {
   Article.find({}, null, { sort: { created: -1 } }, function(err, data) {
     if (data.length === 0) {
       res.render("placeholder", {
-        message:
-          'There\'s nothing scraped yet. Please click "Scrape For Newest Articles" for fresh and delicious news.'
+        message: "click 'scrape newest articles' to see what's up"
       });
     } else {
       res.render("index", { articles: data });
@@ -181,7 +180,7 @@ app.post("/save/:id", function(req, res) {
 });
 
 app.post("/note/:id", function(req, res) {
-  var note = new Note(req.body);
+  var note = new note(req.body);
   note.save(function(err, doc) {
     if (err) throw err;
     Article.findByIdAndUpdate(

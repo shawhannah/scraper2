@@ -12,7 +12,7 @@ var Articleschema = new Schema({
   },
   summary: {
     type: String,
-    default: "Summary unavailable."
+    default: "summary not available"
   },
   img: {
     type: String
@@ -24,7 +24,7 @@ var Articleschema = new Schema({
   },
   status: {
     type: String,
-    default: "Save Article"
+    default: "save article"
   },
   created: {
     type: Date,
@@ -32,11 +32,11 @@ var Articleschema = new Schema({
   },
   note: {
     type: Schema.Types.ObjectId,
-    ref: "Note"
+    ref: "note"
   }
 });
 
 Articleschema.index({ title: "text" });
 
-var Article = mongoose.model("Article", Articleschema);
-module.exports = Article;
+var article = mongoose.model("article", Articleschema);
+module.exports = article;

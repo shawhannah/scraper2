@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>New York Times Scraper</title>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <title>NYT SCRAPER</title>
 </head>
 
 <body>
     <header>
         <a href="/">
-            <div id="sitename">NYT Scraper</div>
+            <div id="sitename">NYT SCRAPER</div>
         </a>
-        <a href="/"><button id="all-articles">All Articles</button></a>
-        <a href="/saved"><button id="saved-articles">Saved Articles</button></a>
+        <a href="/"><button id="all-articles">all articles</button></a>
+        <a href="/saved"><button id="saved-articles">saved articles</button></a>
         <form action="/scrape" method="GET">
-            <button type="submit" id="refresh-articles">Scrape For Newest Articles</button>
+            <button type="submit" id="refresh-articles">scrape newest articles</button>
         </form>
         <form action="/search" method="POST">
-            <button type="submit" id="search-submit">Submit</button>
+            <button type="submit" id="search-submit">submit</button>
             <input type="text" name="search" placeholder="Search for articles" id="search-input">
         </form>
     </header>
@@ -32,20 +33,20 @@
 
     <div id="addnote">
         <div id="note-displayer">
-            <h2>Note</h2>
-            <h3>Article: <span id="article-title"></span></h3>
+            <h2>note</h2>
+            <h3>article: <span id="article-title"></span></h3>
             <div id="note">
-                <label for="note-title">Title</label><br>
+                <label for="note-title">title</label><br>
                 <input type="text" placeholder="Title" name="title" id="note-title"><br>
-                <label for="note-body">Note</label><br>
+                <label for="note-body">note</label><br>
                 <textarea rows="7" placeholder="Note" id="note-body"></textarea><br>
-                <button type="submit" id="add-note">Save Note</button>
-                <button type="button" id="close-note">Cancel</button>
+                <button type="submit" id="add-note">save note</button>
+                <button type="button" id="close-note">cancel</button>
             </div>
         </div>
     </div>
 
-    <footer>© Copyright Rupali Meshram</footer>
+
     <script src="/assets/javascript/app.js"></script>
 </body>
 
